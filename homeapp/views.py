@@ -37,3 +37,5 @@ def women(request):
 def cart(request,id):
     items=Womenlist.objects.filter(women_id=id)
     return render(request,'shop/cart.html',{"items":items})
+def addcart(request):
+    return render(request,'shop/addcart.html')
